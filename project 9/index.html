@@ -6,12 +6,15 @@
     <title>University website</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./img/logo.png">
+    <script src="https://kit.fontawesome.com/84dcc20fb9.js"
+    crossorigin="anonymous"></script>
 </head>
 <body>
     <section class="header">
         <nav>
             <a href="./index.html"><img src="./img/logo.png" ></a>
-            <div class="nav-link">
+            <div class="nav-link" id="navlink">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">About</a></li>
@@ -20,7 +23,38 @@
                     <li><a href="">Contact</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars"onclick="showMenu()"></i>
         </nav>
+        <div class="text-box">
+            <h1>World's Biggest Univeristy</h1>
+            <p>Making website is now one of the easiest thing in the world. You just need to learn HTML , CSS , JAVASCRIPT and you are good to go</p>
+            <a href="" class="hero-btn">Visit Us To Known More</a>
+        </div>
     </section>
+
+    <!-- Cousrse -->
+    <section class="course">
+        <h1>Course We Offer</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- javascript -->
+    <script>
+        var navlink=document.getElementById("navlink");
+        function showMenu(){
+            navlink.style.right = "0";
+        }
+        function hideMenu(){
+            navlink.style.right = "-200px";
+        }
+    </script>
 </body>
 </html> 
